@@ -22,10 +22,10 @@ jobs:
 
       - name: Terraform Plan
         run: terraform plan \
-          -var="aws_access_key=${{ secrets.AWS_ACCESS_KEY_ID }}" \
-          -var="aws_secret_key=${{ secrets.AWS_SECRET_ACCESS_KEY }}"
+          -var="aws_access_key=${{ secrets.AKIA356SJ6QEGA6QPXFA }}" \
+          -var="aws_secret_key=${{ secrets.0Kv69i0kgsro/SiU3SUckEJ70fNZCLkmUyMqMhuk }}"
 
       - name: Terraform Apply
         run: terraform apply -auto-approve \
-          -var="aws_access_key=${{ secrets.AWS_ACCESS_KEY_ID }}" \
-          -var="aws_secret_key=${{ secrets.AWS_SECRET_ACCESS_KEY }}"
+          -var="aws_access_key=${{ secrets.AKIA356SJ6QEGA6QPXFA }}" \
+          -var="aws_secret_key=${{ secrets.0Kv69i0kgsro/SiU3SUckEJ70fNZCLkmUyMqMhuk }}"
