@@ -1,23 +1,14 @@
 provider "aws" {
-
-
-access_key = "AKIA356SJ6QEGA6QPXFA"
-
-secret_key = "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"
-
-region = "us-east-1"
+  region     = var.aws_region
+  access_key = var.aws_access_key
+  secret_key = var.aws_secret_key
 }
 
-resource "aws_instance" "one" {
+resource "aws_instance" "example" {
+  ami           = var.ami_id
+  instance_type = var.instance_type
 
-ami = "ami-0f3f13f145e66a0a3"
-
-instance_type = "t3.micro"
-
-tags = {
-
-Name = "terrafrom ec3"
-
-}
-
+  tags = {
+    Name = "GitHub-Actions-EC2"
+  }
 }
