@@ -1,4 +1,8 @@
+name: Deploy EC2 via Terraform
 
+on:
+  push:
+    branches: [ main ]
 jobs:
   deploy:
     runs-on: ubuntu-latest
